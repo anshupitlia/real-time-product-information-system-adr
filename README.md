@@ -6,17 +6,17 @@ Captures Architecture Decision Records.
 
 ![architecture](docs/architecture-diagram.png)
 
-### Applications Overview:
+### Major components/applications location and Overview:
 
-1. Data Loader/ETL: ![product-information-loader](https://github.com/anshupitlia/product-information-loader)
+1. Data Loader/ETL: [product-information-loader](https://github.com/anshupitlia/product-information-loader)
 
-2. Product Information System: ![product-information-system](https://github.com/anshupitlia/product-information-system)
+2. Product Information System: [product-information-system](https://github.com/anshupitlia/product-information-system)
 
-3. Frontend - ![product-information-system-frontend](https://github.com/anshupitlia/product-information-system-frontend)
+3. Frontend - [product-information-system-frontend](https://github.com/anshupitlia/product-information-system-frontend)
 
-4. Infrastructure brief overview - ![infrastructure](https://github.com/anshupitlia/event-based-message-exchange-infrastructure)
+4. Infrastructure brief overview - [infrastructure](https://github.com/anshupitlia/event-based-message-exchange-infrastructure)
 
-### ADRs
-![DB-choice](DB-choice.md)
+### Few important ADRs:
+[DB-choice](DB-choice.md)
 
-![Message-Broker-choice](Message-Broker-choice.md)
+[Message-Broker-choice](Message-Broker-choice.md)

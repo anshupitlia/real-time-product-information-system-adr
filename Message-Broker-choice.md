@@ -1,0 +1,6 @@
+Title | 002: Decision to choose the message broker
+--- | --- 
+Status | Accepted
+Context | Our project involves real time and async updates to product information system, requiring a message broker. Apache Kafka and AWS SNS SQS mechanism was evaluated. 
+Decision | After thorough evaluation, we choose `Apache Kafka` as the message broker. Rationale: Kafka is designed for extremely high throughput and can handle millions of messages per second. It scales horizontally, meaning you can add more brokers to handle increased traffic. It also provides capability of replication across different clusters in different regions, so the region closer to the application can be accessed in our case where consumer and events are country-dependent. But kafka is not very straightforward to implement and manage. Whereas AWS sns sqs mechanism is fully managed and there is less hassle in terms of management and configuration. We don't need to worry about scalability. However, there is no easy way of replication and it is best if we use only one type of cloud provider that is aws, but our application is in a multi-cloud environment, it is best to use Apache Kafka.
+Consequences | We will achieve low latency and would be able to handle load however it might need a little bit more effort.
